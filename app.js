@@ -40,6 +40,20 @@ let powerObjects = [
 
 for(let i = 0; i < powerObjects.length; i++){
     // newList2.innerHTML += "<li>" + powerObjects[i].name + " - " +powerObjects[i].color + "</li>"
+
     //using object literal - less complex syntax
     newList2.innerHTML += `<li>${powerObjects[i].name} - ${powerObjects[i].color}</li>`
 }
+
+//events - addEventListener
+let myEvent = document.getElementById("event-target")
+let log = document.getElementById("log")
+
+document.addEventListener('keydown', event => {
+    if(event.isComposing || event.keyCode === 229){
+        return;
+    }
+    //do something
+    console.log('key pressed...')
+    log.textContent += `${event.code}`
+})
