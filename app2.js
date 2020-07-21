@@ -6,8 +6,8 @@ let inputBox = document.querySelector("input")
 let btn = document.querySelector("#btn")
 
 
-btn.addEventListener("click", (e) => {
-    // log.textContent = e.target.value
+btn.addEventListener("click", () => {
+        
     let log = document.createElement("p")
     log.textContent = inputBox.value
     document.body.append(log)
@@ -15,6 +15,5 @@ btn.addEventListener("click", (e) => {
 
 })
 
-console.log('input content',inputBox)
 
 
