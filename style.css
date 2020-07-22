@@ -1,0 +1,15 @@
+.wrapper {
+    background-color: bisque;
+    width: 600px;
+    /* height: 600px; */
+    padding: 0.2em;
+    text-align: center;
+}
+input {
+    margin: 1em;
+}
+#btn {
+    margin-left: 12%;
+    border-radius: 0.2rem;
+    outline: none;
+}
